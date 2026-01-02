@@ -637,11 +637,13 @@
     font-size: 18px;
     color: var(--dark-color);
     margin: 0;
+    pointer-events: none;
 }
 
 .faq-question i {
     color: var(--primary-color);
     transition: transform 0.3s;
+    pointer-events: none;
 }
 
 .faq-item.active .faq-question i {

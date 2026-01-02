@@ -619,6 +619,7 @@
     color: var(--dark-color);
     margin: 0;
     transition: color 0.3s;
+    pointer-events: none;
 }
 
 .faq-item.active .faq-question h3 {
@@ -631,6 +632,7 @@
     font-size: 20px;
     flex-shrink: 0;
     margin-left: 20px;
+    pointer-events: none;
 }
 
 .faq-item.active .faq-question i {
@@ -638,11 +640,10 @@
 }
 
 .faq-answer {
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.3s ease;
     background: white;
-    display: block;
 }
 
 .faq-item.active .faq-answer {

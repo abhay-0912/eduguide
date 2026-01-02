@@ -1,63 +1,18 @@
-// FAQ Accordion - Simple and reliable implementation
+// FAQ Accordion
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    console.log('Initializing FAQ with', faqItems.length, 'items');
-    
-    faqItems.forEach((faqItem) => {
-        const question = faqItem.querySelector('.faq-question');
-        const answer = faqItem.querySelector('.faq-answer');
-        
-        if (!question || !answer) {
-            console.error('FAQ item missing question or answer');
-            return;
-        }
-        
-        // Make question clickable
-        question.style.cursor = 'pointer';
-        
-        // Add click event listener
-        question.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.parentElement;
             
-            const isOpen = faqItem.classList.contains('active');
-            
-            // Close all other accordion items
-            document.querySelectorAll('.faq-item.active').forEach((openItem) => {
-                if (openItem !== faqItem) {
-                    openItem.classList.remove('active');
-                    const openAnswer = openItem.querySelector('.faq-answer');
-                    if (openAnswer) {
-                        openAnswer.style.maxHeight = null;
-                    }
+            // Close other FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
                 }
             });
             
-            // Toggle current item
-            if (isOpen) {
-                // Close this item
-                faqItem.classList.remove('active');
-                answer.style.maxHeight = null;
-            } else {
-                // Open this item
-                faqItem.classList.add('active');
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
-            
-            console.log('FAQ toggled:', !isOpen);
-        });
-        
-        // Set initial state
-        answer.style.maxHeight = null;
-    });
-    
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        document.querySelectorAll('.faq-item.active').forEach((openItem) => {
-            const answer = openItem.querySelector('.faq-answer');
-            if (answer) {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
+            // Toggle current FAQ
+            faqItem.classList.toggle('active');
         });
     });
 });
