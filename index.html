@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGuide - Find Your Perfect College & Course</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91-XXXXXXXXXX</span>
+                <span><i class="fas fa-envelope"></i> info@eduguide.in</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduGuide</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn" onclick="scrollToForm()">Get Counselling</button>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>Find Your Perfect College & Course</h1>
+                    <p>Expert counselling for Engineering, Medical, MBA, Distance Education & More</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToForm()">Start Your Journey</button>
+                        <a href="tel:+91XXXXXXXXXX" class="btn-secondary">
+                            <i class="fas fa-phone"></i> Talk to Expert
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" alt="Students studying">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-university"></i>
+                    <h3>500+</h3>
+                    <p>Colleges Listed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>2000+</h3>
+                    <p>Students Counselled</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book"></i>
+                    <h3>50+</h3>
+                    <p>Courses Available</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>4.8/5</h3>
+                    <p>Student Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Popular Courses We Guide For</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Engineering</h3>
+                    <p>B.Tech/M.Tech</p>
+                    <ul>
+                        <li>Top colleges</li>
+                        <li>Career prospects</li>
+                    </ul>
+                    <button class="btn-know-more">Know More</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Medical</h3>
+                    <p>MBBS/BDS/BAMS</p>
+                    <ul>
+                        <li>NEET guidance</li>
+                        <li>College selection</li>
+                    </ul>
+                    <button class="btn-know-more">Know More</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>MBA/PGDM</h3>
+                    <p>Online & Regular</p>
+                    <ul>
+                        <li>Top B-Schools</li>
+                        <li>Career growth</li>
+                    </ul>
+                    <button class="btn-know-more">Know More</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Distance Education</h3>
+                    <p>Work & Study</p>
+                    <ul>
+                        <li>UGC Approved</li>
+                        <li>Flexible learning</li>
+                    </ul>
+                    <button class="btn-know-more">Know More</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Law</h3>
+                    <p>LLB/BA LLB</p>
+                    <ul>
+                        <li>CLAT guidance</li>
+                        <li>Law colleges</li>
+                    </ul>
+                    <button class="btn-know-more">Know More</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design/Arts</h3>
+                    <p>Creative Courses</p>
+                    <ul>
+                        <li>Top institutes</li>
+                        <li>Career opportunities</li>
+                    </ul>
+                    <button class="btn-know-more">Know More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Get Admission in 3 Easy Steps</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Fill Form</h3>
+                    <p>Share your details</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Get Counselling</h3>
+                    <p>Talk to our experts</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Secure Admission</h3>
+                    <p>Get enrolled in top colleges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Students Trust Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Free Counselling</h3>
+                    <p>No hidden charges</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Expert Guidance</h3>
+                    <p>10+ years experience</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Wide College Network</h3>
+                    <p>500+ partner colleges</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Post-Admission Support</h3>
+                    <p>We help till you join</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Scholarship Assistance</h3>
+                    <p>Help in getting scholarships</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-compass"></i>
+                    <h3>Career Counselling</h3>
+                    <p>Right course selection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Registration Form -->
+    <section id="contact" class="registration-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="section-title">Start Your Journey Today - Get Free Counselling</h2>
+                <form id="counsellingForm" class="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="fullName" required>
+                            <label for="fullName">Full Name *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+                            <label for="mobile">Mobile Number *</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email ID *</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="education" required>
+                                <option value="">Select Education Level *</option>
+                                <option value="10th">10th Pass</option>
+                                <option value="12th">12th Pass/Pursuing</option>
+                                <option value="graduate">Graduate</option>
+                                <option value="postgraduate">Post Graduate</option>
+                                <option value="working">Working Professional</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="course" required>
+                                <option value="">Select Interested Course *</option>
+                                <option value="engineering">Engineering (B.Tech/M.Tech)</option>
+                                <option value="medical">Medical (MBBS/BDS/Nursing)</option>
+                                <option value="mba">MBA/PGDM</option>
+                                <option value="bba-bca">BBA/BCA</option>
+                                <option value="distance">Distance Education</option>
+                                <option value="law">Law (LLB)</option>
+                                <option value="design">Design/Arts</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="mode" required>
+                                <option value="">Preferred Mode *</option>
+                                <option value="regular">Regular (Full-time)</option>
+                                <option value="online">Online</option>
+                                <option value="distance">Distance Learning</option>
+                                <option value="parttime">Part-time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="city" required>
+                            <label for="city">Your City *</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="state" required>
+                                <option value="">Select State *</option>
+                                <option value="andhra-pradesh">Andhra Pradesh</option>
+                                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                <option value="assam">Assam</option>
+                                <option value="bihar">Bihar</option>
+                                <option value="chhattisgarh">Chhattisgarh</option>
+                                <option value="goa">Goa</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="haryana">Haryana</option>
+                                <option value="himachal-pradesh">Himachal Pradesh</option>
+                                <option value="jharkhand">Jharkhand</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="madhya-pradesh">Madhya Pradesh</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="manipur">Manipur</option>
+                                <option value="meghalaya">Meghalaya</option>
+                                <option value="mizoram">Mizoram</option>
+                                <option value="nagaland">Nagaland</option>
+                                <option value="odisha">Odisha</option>
+                                <option value="punjab">Punjab</option>
+                                <option value="rajasthan">Rajasthan</option>
+                                <option value="sikkim">Sikkim</option>
+                                <option value="tamil-nadu">Tamil Nadu</option>
+                                <option value="telangana">Telangana</option>
+                                <option value="tripura">Tripura</option>
+                                <option value="uttar-pradesh">Uttar Pradesh</option>
+                                <option value="uttarakhand">Uttarakhand</option>
+                                <option value="west-bengal">West Bengal</option>
+                                <option value="delhi">Delhi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" rows="4"></textarea>
+                        <label for="message">Message (Optional)</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Get Free Counselling Now</button>
+                    <div class="form-footer">
+                        <p><i class="fas fa-lock"></i> Your information is safe with us</p>
+                        <p>We'll call you within 24 hours</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"EduGuide helped me get admission in my dream college. The counselling was very helpful!"</p>
+                    <div class="student-info">
+                        <strong>Rahul Sharma</strong>
+                        <span>B.Tech Student</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best counselling service! They guided me through the entire admission process."</p>
+                    <div class="student-info">
+                        <strong>Priya Singh</strong>
+                        <span>MBA Student</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Got admission in top university through EduGuide. Highly recommended!"</p>
+                    <div class="student-info">
+                        <strong>Amit Kumar</strong>
+                        <span>Distance Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Educational Journey?</h2>
+                <p>Talk to our experts today and find the perfect course for you</p>
+                <a href="tel:+91XXXXXXXXXX" class="cta-button">
+                    <i class="fas fa-phone"></i> Get Free Counselling
+                </a>
+                <p class="cta-phone">Or Call Us: <strong>+91-XXXXXXXXXX</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduGuide</span>
+                    </div>
+                    <p>Your trusted partner in educational counselling and college admissions. We help students find their perfect course and college.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Medical</a></li>
+                        <li><a href="#">MBA</a></li>
+                        <li><a href="#">Distance Education</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Street, New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91-XXXXXXXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@eduguide.in</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat, 10 AM - 7 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EduGuide. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+91XXXXXXXXXX" class="call-float">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" style="display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EduGuide | Get In Touch With Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91-XXXXXXXXXX</span>
+                <span><i class="fas fa-envelope"></i> info@eduguide.in</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduGuide</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">Get Counselling</button>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header/Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Get In Touch With Us</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact Us</span>
+                </div>
+                <p class="tagline">We're Here to Help You Build Your Future</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="contact-intro">
+        <div class="container">
+            <h2 class="section-title">Let's Start Your Educational Journey</h2>
+            <div class="intro-content">
+                <p>Have questions about admissions, courses, or career guidance? We're here to help!</p>
+                <p>Reach out to us through any of the methods below, and our expert counsellors will get back to you as soon as possible.</p>
+                <p class="highlight"><i class="fas fa-phone"></i> Call us, <i class="fas fa-envelope"></i> email us, or <i class="fas fa-edit"></i> fill out the form - we're always ready to assist you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="contact-cards-section">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p class="main-contact">+91-XXXXXXXXXX</p>
+                    <p class="secondary-contact">+91-XXXXXXXXXX (Alternate)</p>
+                    <div class="hours">
+                        <p><strong>Mon - Sat:</strong> 10:00 AM - 7:00 PM</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+                    <a href="tel:+91XXXXXXXXXX" class="contact-btn">Call Now</a>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p class="main-contact">info@eduguide.in</p>
+                    <p class="secondary-contact">support@eduguide.in</p>
+                    <div class="hours">
+                        <p>We respond within 24 hours</p>
+                    </div>
+                    <a href="mailto:info@eduguide.in" class="contact-btn">Send Email</a>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Office</h3>
+                    <p class="main-contact">123 Education Street</p>
+                    <p class="secondary-contact">New Delhi - 110001</p>
+                    <div class="hours">
+                        <p><strong>Mon - Sat:</strong> 10:00 AM - 7:00 PM</p>
+                    </div>
+                    <a href="#" class="contact-btn">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Form -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">Send Us a Message</h2>
+            <div class="form-wrapper">
+                <form id="quickContactForm" class="quick-contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contactName" required>
+                            <label for="contactName">Your Full Name *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" pattern="[0-9]{10}" required>
+                            <label for="contactPhone">Mobile Number *</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" required>
+                            <label for="contactEmail">Email Address *</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="contactSubject" required>
+                                <option value="">Select Subject *</option>
+                                <option value="Career Counselling">Career Counselling</option>
+                                <option value="Course Information">Course Information</option>
+                                <option value="Admission Inquiry">Admission Inquiry</option>
+                                <option value="Scholarship Query">Scholarship Query</option>
+                                <option value="General Question">General Question</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="contactEducation" required>
+                                <option value="">Current Education Level *</option>
+                                <option value="10th">10th Pass/Pursuing</option>
+                                <option value="12th">12th Pass/Pursuing</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Postgraduate">Post Graduate</option>
+                                <option value="Working">Working Professional</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="contactCourse">
+                                <option value="">Interested Course (Optional)</option>
+                                <option value="Engineering">Engineering (B.Tech/M.Tech)</option>
+                                <option value="Medical">Medical & Healthcare</option>
+                                <option value="Management">Management (MBA/BBA)</option>
+                                <option value="Commerce">Commerce & Finance</option>
+                                <option value="Computer">Computer Applications & IT</option>
+                                <option value="Law">Law (LLB/BA LLB)</option>
+                                <option value="Arts">Arts & Humanities</option>
+                                <option value="Distance">Distance & Online Education</option>
+                                <option value="Science">Science Programs</option>
+                                <option value="Education">Education & Teaching</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="contactMessage" rows="5" required></textarea>
+                        <label for="contactMessage">Your Message *</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Preferred Contact Method</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="method" value="Phone"> Phone Call
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="method" value="WhatsApp"> WhatsApp
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="method" value="Email"> Email
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="contactTime" required>
+                                <option value="">Best Time to Contact *</option>
+                                <option value="Morning">Morning (10 AM - 12 PM)</option>
+                                <option value="Afternoon">Afternoon (12 PM - 4 PM)</option>
+                                <option value="Evening">Evening (4 PM - 7 PM)</option>
+                                <option value="Anytime">Anytime</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="form-footer">
+                        <p><i class="fas fa-lock"></i> Your information is completely safe with us</p>
+                        <p><i class="fas fa-clock"></i> We'll get back to you within 24 hours</p>
+                    </div>
+                </form>
+                <div class="whatsapp-quick-connect">
+                    <p>Or reach us directly on WhatsApp:</p>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us on Map</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.1234567890!2d77.2!3d28.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzAwLjAiTiA3N8KwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-cta">
+                <a href="https://maps.google.com" target="_blank" class="map-btn">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="office-hours-section">
+        <div class="container">
+            <h2 class="section-title">When We're Available</h2>
+            <div class="hours-container">
+                <div class="hours-box">
+                    <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                    <div class="hours-grid">
+                        <div class="hour-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">10:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="hour-item closed">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed (WhatsApp Available)</span>
+                        </div>
+                    </div>
+                    <p class="hours-note">For urgent queries, you can WhatsApp us anytime, and we'll respond as soon as possible.</p>
+                    <p class="emergency">Emergency Contact: <strong>+91-XXXXXXXXXX</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Follow Us on Social Media</h2>
+            <div class="social-grid">
+                <div class="social-card">
+                    <div class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>@eduguide</p>
+                    <a href="https://facebook.com" class="social-btn" target="_blank">Follow Us</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@eduguide.in</p>
+                    <a href="https://instagram.com" class="social-btn" target="_blank">Follow Us</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+91-XXXXXXXXXX</p>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="social-btn" target="_blank">Chat Now</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>EduGuide</p>
+                    <a href="https://linkedin.com" class="social-btn" target="_blank">Connect</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>EduGuide Official</p>
+                    <a href="https://youtube.com" class="social-btn" target="_blank">Subscribe</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Twitter</h3>
+                    <p>@eduguide</p>
+                    <a href="https://twitter.com" class="social-btn" target="_blank">Follow</a>
+                </div>
+            </div>
+            <div class="social-benefits">
+                <h3>Stay updated with:</h3>
+                <div class="benefits-list">
+                    <span><i class="fas fa-check"></i> Latest admission notifications</span>
+                    <span><i class="fas fa-check"></i> Career tips & guidance</span>
+                    <span><i class="fas fa-check"></i> Scholarship opportunities</span>
+                    <span><i class="fas fa-check"></i> Success stories</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="contact-faq-section">
+        <div class="container">
+            <h2 class="section-title">Common Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly will I get a response?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond within 24 hours on working days. For urgent queries, please call us directly or WhatsApp us.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is counselling available on weekends?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! While our office is closed on Sundays, you can book Saturday appointments. We also offer online counselling sessions that can be scheduled according to your convenience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I visit the office without an appointment?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While walk-ins are welcome, we recommend booking an appointment to ensure our counsellors can give you dedicated time without waiting.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you charge for counselling?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! Our counselling services are completely FREE. There are no hidden charges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I get counselling in regional languages?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our counsellors can provide guidance in Hindi, English, and other regional languages as applicable. Please mention your preferred language when contacting us.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does a counselling session take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Initial counselling sessions typically take 30-45 minutes. Follow-up sessions may be shorter depending on your needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can parents join the counselling session?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We encourage parents to participate in counselling sessions. Education decisions are important family matters.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide online counselling?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer both in-person and online counselling via video call, phone, or WhatsApp. Book your preferred mode of consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Contact Us -->
+    <section class="why-contact-section">
+        <div class="container">
+            <h2 class="section-title">What Happens When You Contact Us?</h2>
+            <div class="process-timeline">
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>You Reach Out</h3>
+                        <p>Fill form, call, or WhatsApp us</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>We Connect (within 24 hours)</h3>
+                        <p>Our counsellor will contact you at your preferred time</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Initial Discussion</h3>
+                        <p>We understand your goals, interests, and background</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Personalized Guidance</h3>
+                        <p>Receive customized course and college recommendations</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Admission Support</h3>
+                        <p>Complete assistance throughout the admission process</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Ongoing Support</h3>
+                        <p>We stay with you until you successfully enroll</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="contact-testimonial-section">
+        <div class="container">
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"I contacted EduGuide through their website, and they responded within hours. The counselling was very helpful and professional! I got admitted to my dream college."</p>
+                    <div class="testimonial-author">
+                        <strong>Neha Sharma</strong>
+                        <span>MBA Student</span>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Contact Methods -->
+    <section class="alternative-contact-section">
+        <div class="container">
+            <h2 class="section-title">Other Ways to Reach Us</h2>
+            <div class="alternative-grid">
+                <div class="alt-contact-card">
+                    <div class="alt-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Business</h3>
+                    <p class="contact-number">+91-XXXXXXXXXX</p>
+                    <p class="description">Quick replies & instant support</p>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="alt-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="alt-contact-card">
+                    <div class="alt-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p class="contact-number">Available 24/7</p>
+                    <p class="description">Mon-Sat: 10 AM - 7 PM</p>
+                    <a href="#" class="alt-btn">
+                        <i class="fas fa-comments"></i> Start Chat
+                    </a>
+                </div>
+                <div class="alt-contact-card">
+                    <div class="alt-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p class="contact-number">info@eduguide.in</p>
+                    <p class="description">Detailed queries & documents</p>
+                    <a href="mailto:info@eduguide.in" class="alt-btn">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+                <div class="alt-contact-card">
+                    <div class="alt-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Toll-Free Number</h3>
+                    <p class="contact-number">1800-XXX-XXXX</p>
+                    <p class="description">Free calling from anywhere in India</p>
+                    <a href="tel:1800XXXXXX" class="alt-btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                <div class="alt-contact-card">
+                    <div class="alt-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram Channel</h3>
+                    <p class="contact-number">@eduguide_official</p>
+                    <p class="description">Updates & notifications</p>
+                    <a href="https://t.me/eduguide_official" class="alt-btn" target="_blank">
+                        <i class="fab fa-telegram"></i> Join Channel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location Details -->
+    <section class="office-details-section">
+        <div class="container">
+            <h2 class="section-title">How to Reach Our Office</h2>
+            <div class="office-info-grid">
+                <div class="office-info-box">
+                    <h3><i class="fas fa-map-marker-alt"></i> Office Address</h3>
+                    <p class="address">
+                        123 Education Street<br>
+                        New Delhi - 110001<br>
+                        India
+                    </p>
+                    <div class="landmarks">
+                        <h4>Nearby Landmarks:</h4>
+                        <ul>
+                            <li>Connaught Place</li>
+                            <li>Delhi University</li>
+                            <li>Central Park</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="office-info-box">
+                    <h3><i class="fas fa-directions"></i> Public Transport</h3>
+                    <div class="transport-info">
+                        <p><strong><i class="fas fa-subway"></i> Metro:</strong> Rajiv Chowk Station - 5 minutes walk</p>
+                        <p><strong><i class="fas fa-bus"></i> Bus:</strong> Multiple bus routes available</p>
+                        <p><strong><i class="fas fa-car"></i> Parking:</strong> Paid parking available nearby</p>
+                    </div>
+                </div>
+                <div class="office-info-box">
+                    <h3><i class="fas fa-clipboard-list"></i> What to Bring</h3>
+                    <ul class="bring-list">
+                        <li><i class="fas fa-check"></i> Academic marksheets (10th, 12th, if any)</li>
+                        <li><i class="fas fa-check"></i> ID proof</li>
+                        <li><i class="fas fa-check"></i> List of preferred courses/colleges</li>
+                        <li><i class="fas fa-check"></i> Parents (if possible)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy & Security -->
+    <section class="privacy-section">
+        <div class="container">
+            <div class="privacy-box">
+                <h3><i class="fas fa-shield-alt"></i> Your Privacy Matters</h3>
+                <p>All information you share with us is kept strictly confidential. We do not share your personal details with any third party without your consent.</p>
+                <div class="privacy-links">
+                    <a href="#">Read our Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="contact-cta-banner">
+        <div class="container">
+            <div class="cta-banner-content">
+                <h2><i class="fas fa-phone-volume"></i> Ready to Plan Your Future?</h2>
+                <p>Don't wait! Contact us today and take the first step toward your dream career.</p>
+                <div class="cta-banner-buttons">
+                    <a href="tel:+91XXXXXXXXXX" class="cta-banner-btn">
+                        <i class="fas fa-phone"></i> Call +91-XXXXXXXXXX
+                    </a>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="cta-banner-btn whatsapp-cta" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                    <button class="cta-banner-btn counsel" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-pencil-alt"></i> Book Free Counselling
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours Calendar -->
+    <section class="business-hours-calendar">
+        <div class="container">
+            <h2 class="section-title">Business Hours Calendar</h2>
+            <div class="calendar-box">
+                <table class="hours-table">
+                    <tbody>
+                        <tr>
+                            <td class="day-name">Monday</td>
+                            <td class="day-hours">10:00 AM - 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="day-name">Tuesday</td>
+                            <td class="day-hours">10:00 AM - 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="day-name">Wednesday</td>
+                            <td class="day-hours">10:00 AM - 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="day-name">Thursday</td>
+                            <td class="day-hours">10:00 AM - 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="day-name">Friday</td>
+                            <td class="day-hours">10:00 AM - 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="day-name">Saturday</td>
+                            <td class="day-hours">10:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr class="closed-row">
+                            <td class="day-name">Sunday</td>
+                            <td class="day-hours">Closed (WhatsApp Available)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduGuide</span>
+                    </div>
+                    <p>Your trusted partner in educational counselling and college admissions. We help students find their perfect course and college.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="courses.html#engineering">Engineering</a></li>
+                        <li><a href="courses.html#medical">Medical</a></li>
+                        <li><a href="courses.html#management">MBA</a></li>
+                        <li><a href="courses.html#distance">Distance Education</a></li>
+                        <li><a href="courses.html#law">Law</a></li>
+                        <li><a href="courses.html#arts">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Street, New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91-XXXXXXXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@eduguide.in</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat, 10 AM - 7 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EduGuide. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+91XXXXXXXXXX" class="call-float">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="contact-script.js"></script>
+</body>
+</html>

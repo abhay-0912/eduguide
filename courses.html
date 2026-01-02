@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses & Programs - EduGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="courses-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91-XXXXXXXXXX</span>
+                <span><i class="fas fa-envelope"></i> info@eduguide.in</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduGuide</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn" onclick="scrollToForm()">Get Counselling</button>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header/Banner -->
+    <section class="page-banner">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="banner-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Courses</span>
+                </div>
+                <h1>Explore Courses & Programs</h1>
+                <p class="tagline">Find the Perfect Course for Your Career Goals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Choose Your Path to Success</h2>
+            <p>We provide expert counselling and admission guidance for a wide range of courses across multiple streams. Whether you're interested in engineering, medical, management, or creative fields, we help you find the right program that aligns with your career aspirations.</p>
+            <p>Browse through our course categories below and discover the opportunities waiting for you.</p>
+        </div>
+    </section>
+
+    <!-- Course Categories Section -->
+    <section class="courses-section">
+        <div class="container">
+            
+            <!-- Quick Navigation -->
+            <div class="course-navigation">
+                <h3>Quick Jump to Course:</h3>
+                <div class="nav-buttons">
+                    <a href="#engineering" class="nav-btn">🔧 Engineering</a>
+                    <a href="#medical" class="nav-btn">🏥 Medical</a>
+                    <a href="#management" class="nav-btn">💼 Management</a>
+                    <a href="#commerce" class="nav-btn">💰 Commerce</a>
+                    <a href="#computer" class="nav-btn">💻 IT</a>
+                    <a href="#law" class="nav-btn">⚖️ Law</a>
+                    <a href="#arts" class="nav-btn">🎨 Arts</a>
+                    <a href="#distance" class="nav-btn">🌐 Distance</a>
+                    <a href="#science" class="nav-btn">🔬 Science</a>
+                    <a href="#education" class="nav-btn">👨‍🏫 Teaching</a>
+                </div>
+            </div>
+            
+            <!-- Category 1: Engineering -->
+            <div class="course-category" id="engineering">
+                <div class="category-header">
+                    <span class="category-icon">🔧</span>
+                    <h2>Engineering (B.Tech / M.Tech / Diploma)</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&h=400&fit=crop" alt="Engineering">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Popular Specializations:</h3>
+                            <ul>
+                                <li>Computer Science & Engineering</li>
+                                <li>Mechanical Engineering</li>
+                                <li>Electrical & Electronics Engineering</li>
+                                <li>Civil Engineering</li>
+                                <li>Information Technology</li>
+                                <li>Electronics & Communication</li>
+                                <li>Chemical Engineering</li>
+                                <li>Automobile Engineering</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Course Duration:</h3>
+                            <ul>
+                                <li>B.Tech: 4 years</li>
+                                <li>M.Tech: 2 years</li>
+                                <li>Diploma: 3 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>B.Tech: 12th with PCM (Physics, Chemistry, Math)</li>
+                                <li>M.Tech: B.Tech/BE degree</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Software Developer, Mechanical Engineer, Design Engineer, Project Manager, Consultant, Research Scientist, and many more.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Top Entrance Exams:</h3>
+                            <p>JEE Main, JEE Advanced, State Engineering Exams, University-specific tests</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Admission Modes:</h3>
+                            <ul>
+                                <li>Regular (Full-time campus)</li>
+                                <li>Distance/Online (for working professionals)</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Engineering')">Get Counselling for Engineering</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Medical & Healthcare -->
+            <div class="course-category" id="medical">
+                <div class="category-header">
+                    <span class="category-icon">🏥</span>
+                    <h2>Medical & Healthcare Programs</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=400&fit=crop" alt="Medical">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Popular Courses:</h3>
+                            <ul>
+                                <li>MBBS (Bachelor of Medicine, Bachelor of Surgery)</li>
+                                <li>BDS (Bachelor of Dental Surgery)</li>
+                                <li>BAMS (Bachelor of Ayurvedic Medicine & Surgery)</li>
+                                <li>BHMS (Bachelor of Homeopathic Medicine & Surgery)</li>
+                                <li>B.Pharm (Bachelor of Pharmacy)</li>
+                                <li>Nursing (B.Sc Nursing / GNM)</li>
+                                <li>Physiotherapy (BPT)</li>
+                                <li>Medical Lab Technology</li>
+                                <li>Paramedical Courses</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Course Duration:</h3>
+                            <ul>
+                                <li>MBBS: 5.5 years (including internship)</li>
+                                <li>BDS: 5 years</li>
+                                <li>BAMS/BHMS: 5.5 years</li>
+                                <li>B.Pharm: 4 years</li>
+                                <li>B.Sc Nursing: 4 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>12th with PCB (Physics, Chemistry, Biology)</li>
+                                <li>Minimum percentage as per college requirements</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Doctor, Dentist, Pharmacist, Nurse, Physiotherapist, Medical Researcher, Healthcare Administrator</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Top Entrance Exams:</h3>
+                            <p>NEET UG, NEET PG, State Medical Exams</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Medical')">Get Counselling for Medical</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Management -->
+            <div class="course-category" id="management">
+                <div class="category-header">
+                    <span class="category-icon">💼</span>
+                    <h2>Management Programs (MBA/PGDM/BBA)</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Management">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Undergraduate:</h3>
+                            <ul>
+                                <li>BBA (Bachelor of Business Administration) - 3 years</li>
+                                <li>BMS (Bachelor of Management Studies) - 3 years</li>
+                                <li>BBM (Bachelor of Business Management) - 3 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Postgraduate:</h3>
+                            <ul>
+                                <li>MBA (Master of Business Administration) - 2 years</li>
+                                <li>PGDM (Post Graduate Diploma in Management) - 2 years</li>
+                                <li>Executive MBA - 1-2 years (for working professionals)</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Popular Specializations:</h3>
+                            <ul>
+                                <li>Finance & Accounting</li>
+                                <li>Marketing & Sales</li>
+                                <li>Human Resource Management</li>
+                                <li>Operations Management</li>
+                                <li>International Business</li>
+                                <li>Business Analytics</li>
+                                <li>Digital Marketing</li>
+                                <li>Entrepreneurship</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>BBA: 12th from any stream</li>
+                                <li>MBA: Graduate in any discipline</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Business Analyst, Marketing Manager, HR Manager, Finance Manager, Operations Manager, Entrepreneur, Consultant</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Top Entrance Exams:</h3>
+                            <p>CAT, MAT, XAT, CMAT, SNAP, State MBA Exams</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Admission Modes:</h3>
+                            <ul>
+                                <li>Regular MBA (Full-time)</li>
+                                <li>Online MBA</li>
+                                <li>Distance MBA</li>
+                                <li>Executive MBA (Weekend/Evening classes)</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Management')">Get Counselling for Management</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Commerce & Finance -->
+            <div class="course-category" id="commerce">
+                <div class="category-header">
+                    <span class="category-icon">💰</span>
+                    <h2>Commerce & Finance Programs</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&h=400&fit=crop" alt="Commerce">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Undergraduate:</h3>
+                            <ul>
+                                <li>B.Com (Bachelor of Commerce) - 3 years</li>
+                                <li>B.Com (Honors) - 3 years</li>
+                                <li>BBA Finance - 3 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Professional Courses:</h3>
+                            <ul>
+                                <li>CA (Chartered Accountancy)</li>
+                                <li>CS (Company Secretary)</li>
+                                <li>CMA (Cost & Management Accountant)</li>
+                                <li>CFA (Chartered Financial Analyst)</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Postgraduate:</h3>
+                            <ul>
+                                <li>M.Com (Master of Commerce) - 2 years</li>
+                                <li>MBA Finance - 2 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>B.Com: 12th with Commerce (preferred)</li>
+                                <li>Professional courses: 12th or Graduate</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Chartered Accountant, Financial Analyst, Tax Consultant, Accountant, Auditor, Banking Professional, Investment Advisor</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Commerce')">Get Counselling for Commerce</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5: Computer Applications & IT -->
+            <div class="course-category" id="computer">
+                <div class="category-header">
+                    <span class="category-icon">💻</span>
+                    <h2>Computer Applications & IT</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=400&fit=crop" alt="Computer Science">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Undergraduate:</h3>
+                            <ul>
+                                <li>BCA (Bachelor of Computer Applications) - 3 years</li>
+                                <li>B.Tech CSE/IT - 4 years</li>
+                                <li>B.Sc Computer Science - 3 years</li>
+                                <li>B.Sc IT - 3 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Postgraduate:</h3>
+                            <ul>
+                                <li>MCA (Master of Computer Applications) - 2 years</li>
+                                <li>M.Tech CSE/IT - 2 years</li>
+                                <li>M.Sc Computer Science - 2 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Specialized Programs:</h3>
+                            <ul>
+                                <li>Data Science & AI</li>
+                                <li>Cyber Security</li>
+                                <li>Cloud Computing</li>
+                                <li>Full Stack Development</li>
+                                <li>Mobile App Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>BCA/B.Sc: 12th with Math (preferred)</li>
+                                <li>MCA: Graduate with Math at 10+2 or graduation level</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Software Developer, Web Developer, Data Scientist, System Analyst, Network Administrator, AI/ML Engineer, Cyber Security Expert</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Computer Courses')">Get Counselling for Computer Courses</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 6: Law -->
+            <div class="course-category" id="law">
+                <div class="category-header">
+                    <span class="category-icon">⚖️</span>
+                    <h2>Law Programs</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500&h=400&fit=crop" alt="Law">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Undergraduate:</h3>
+                            <ul>
+                                <li>BA LLB (Integrated) - 5 years</li>
+                                <li>BBA LLB (Integrated) - 5 years</li>
+                                <li>B.Com LLB (Integrated) - 5 years</li>
+                                <li>LLB (After Graduation) - 3 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Postgraduate:</h3>
+                            <ul>
+                                <li>LLM (Master of Laws) - 1-2 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Specializations:</h3>
+                            <ul>
+                                <li>Corporate Law</li>
+                                <li>Criminal Law</li>
+                                <li>Constitutional Law</li>
+                                <li>Intellectual Property Law</li>
+                                <li>Cyber Law</li>
+                                <li>Family Law</li>
+                                <li>Tax Law</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>Integrated LLB: 12th from any stream</li>
+                                <li>LLB: Graduate in any discipline</li>
+                                <li>LLM: LLB degree</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Advocate, Corporate Lawyer, Legal Advisor, Judge, Legal Consultant, Public Prosecutor</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Top Entrance Exams:</h3>
+                            <p>CLAT, AILET, LSAT, State Law Exams</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Law')">Get Counselling for Law</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 7: Arts & Humanities -->
+            <div class="course-category" id="arts">
+                <div class="category-header">
+                    <span class="category-icon">🎨</span>
+                    <h2>Arts & Humanities</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=500&h=400&fit=crop" alt="Arts">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Popular Courses:</h3>
+                            <ul>
+                                <li>BA (Bachelor of Arts) - 3 years</li>
+                                <li>Subjects: English, History, Political Science, Sociology, Psychology, Economics, Geography</li>
+                                <li>BA (Honors) in specific subjects - 3 years</li>
+                                <li>MA (Master of Arts) - 2 years</li>
+                                <li>Mass Communication & Journalism</li>
+                                <li>Hotel Management</li>
+                                <li>Event Management</li>
+                                <li>Social Work (BSW/MSW)</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Creative Fields:</h3>
+                            <ul>
+                                <li>Fashion Design</li>
+                                <li>Interior Design</li>
+                                <li>Graphic Design</li>
+                                <li>Animation & VFX</li>
+                                <li>Photography</li>
+                                <li>Fine Arts</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>BA: 12th from any stream</li>
+                                <li>Professional courses: 12th with relevant subjects</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Journalist, Content Writer, Psychologist, Social Worker, Designer, Teacher, Civil Services, Media Professional</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Arts')">Get Counselling for Arts</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 8: Distance & Online Education -->
+            <div class="course-category" id="distance">
+                <div class="category-header">
+                    <span class="category-icon">🌐</span>
+                    <h2>Distance & Online Education</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=500&h=400&fit=crop" alt="Online Education">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Ideal for:</h3>
+                            <ul class="check-list">
+                                <li>✓ Working Professionals</li>
+                                <li>✓ Homemakers</li>
+                                <li>✓ Students who couldn't pursue regular education</li>
+                                <li>✓ Anyone seeking flexible learning</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Popular Programs:</h3>
+                            <ul>
+                                <li>BA/B.Com/B.Sc (Distance)</li>
+                                <li>BBA/BCA (Distance)</li>
+                                <li>MBA/MCA (Distance)</li>
+                                <li>M.Com/MA (Distance)</li>
+                                <li>Diploma Programs</li>
+                                <li>Certificate Courses</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Benefits:</h3>
+                            <ul>
+                                <li>Study at your own pace</li>
+                                <li>No need to attend regular classes</li>
+                                <li>UGC/AICTE approved degrees</li>
+                                <li>Same value as regular degrees</li>
+                                <li>Affordable fees</li>
+                                <li>Work while you study</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Top Universities:</h3>
+                            <ul>
+                                <li>IGNOU (Indira Gandhi National Open University)</li>
+                                <li>State Open Universities</li>
+                                <li>University-specific distance programs</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Distance Education')">Get Counselling for Distance Education</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 9: Science -->
+            <div class="course-category" id="science">
+                <div class="category-header">
+                    <span class="category-icon">🔬</span>
+                    <h2>Science Programs</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500&h=400&fit=crop" alt="Science">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Undergraduate:</h3>
+                            <ul>
+                                <li>B.Sc - 3 years</li>
+                                <li>Specializations: Physics, Chemistry, Mathematics, Biology, Biotechnology, Microbiology, Zoology, Botany, Environmental Science</li>
+                                <li>B.Sc (Honors) - 3 years in specific subjects</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Postgraduate:</h3>
+                            <ul>
+                                <li>M.Sc - 2 years in various specializations</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Research:</h3>
+                            <ul>
+                                <li>Ph.D in Science streams</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>B.Sc: 12th with PCM/PCB</li>
+                                <li>M.Sc: B.Sc in relevant subject</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>Research Scientist, Lab Technician, Teacher/Professor, Pharmaceutical Professional, Environmental Consultant, Quality Analyst</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Science')">Get Counselling for Science</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 10: Education & Teaching -->
+            <div class="course-category" id="education">
+                <div class="category-header">
+                    <span class="category-icon">👨‍🏫</span>
+                    <h2>Education & Teaching</h2>
+                </div>
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=400&fit=crop" alt="Teaching">
+                    </div>
+                    <div class="category-details">
+                        <div class="detail-section">
+                            <h3>Programs:</h3>
+                            <ul>
+                                <li>B.Ed (Bachelor of Education) - 2 years</li>
+                                <li>D.El.Ed (Diploma in Elementary Education) - 2 years</li>
+                                <li>M.Ed (Master of Education) - 2 years</li>
+                                <li>B.P.Ed (Physical Education) - 3 years</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Eligibility:</h3>
+                            <ul>
+                                <li>B.Ed: Graduate in any stream with 50% marks</li>
+                                <li>D.El.Ed: 12th pass</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Career Opportunities:</h3>
+                            <p>School Teacher, College Professor, Education Consultant, Curriculum Designer, Educational Administrator</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Entrance Exams:</h3>
+                            <p>State B.Ed entrance exams, University-specific tests</p>
+                        </div>
+
+                        <button class="btn-counselling" onclick="scrollToForm('Education')">Get Counselling for Education</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Not Sure Section -->
+    <section class="not-sure-section">
+        <div class="container">
+            <div class="not-sure-box">
+                <div class="icon-circle">🤔</div>
+                <h2>Confused About Your Career Path?</h2>
+                <p>Don't worry! Our expert counsellors are here to help you.</p>
+                <div class="features-list">
+                    <div class="feature-item">✓ Academic background</div>
+                    <div class="feature-item">✓ Interests & skills</div>
+                    <div class="feature-item">✓ Career goals</div>
+                    <div class="feature-item">✓ Budget & location preferences</div>
+                </div>
+                <p class="highlight-text">And recommend the best course for YOU!</p>
+                <div class="action-buttons">
+                    <button class="btn-large" onclick="scrollToForm()">Get Free Career Counselling</button>
+                    <a href="tel:+91XXXXXXXXXX" class="btn-call">
+                        <i class="fas fa-phone"></i> Call Now: +91-XXXXXXXXXX
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Selection Tips -->
+    <section class="tips-section">
+        <div class="container">
+            <h2>How to Choose the Right Course</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">1️⃣</div>
+                    <h3>Know Your Interests</h3>
+                    <p>Choose a field you're genuinely passionate about, not just what others expect.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">2️⃣</div>
+                    <h3>Research Career Options</h3>
+                    <p>Look at job opportunities, salary prospects, and growth potential in that field.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">3️⃣</div>
+                    <h3>Check Eligibility</h3>
+                    <p>Ensure you meet the educational requirements and entrance exam criteria.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">4️⃣</div>
+                    <h3>Consider Your Situation</h3>
+                    <p>Think about mode (regular/distance), location, fees, and your personal circumstances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section" id="registration-form">
+        <div class="container">
+            <div class="form-header">
+                <h2>Ready to Take the Next Step?</h2>
+                <p>Fill out the form below and our counsellors will get in touch with you</p>
+            </div>
+            <form class="registration-form" id="courseForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile *</label>
+                        <input type="tel" id="mobile" name="mobile" required placeholder="+91-XXXXXXXXXX" pattern="[0-9]{10}">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Interested Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select a course</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="medical">Medical & Healthcare</option>
+                            <option value="management">Management (MBA/BBA)</option>
+                            <option value="commerce">Commerce & Finance</option>
+                            <option value="computer">Computer Applications & IT</option>
+                            <option value="law">Law</option>
+                            <option value="arts">Arts & Humanities</option>
+                            <option value="distance">Distance & Online Education</option>
+                            <option value="science">Science</option>
+                            <option value="education">Education & Teaching</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="current-education">Current Education *</label>
+                        <select id="current-education" name="current-education" required>
+                            <option value="">Select your current education</option>
+                            <option value="12th-appearing">12th Appearing</option>
+                            <option value="12th-passed">12th Passed</option>
+                            <option value="graduate-appearing">Graduate Appearing</option>
+                            <option value="graduate-passed">Graduate Passed</option>
+                            <option value="postgraduate">Postgraduate</option>
+                            <option value="working-professional">Working Professional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mode">Preferred Mode *</label>
+                        <select id="mode" name="mode" required>
+                            <option value="">Select mode</option>
+                            <option value="regular">Regular (Full-time)</option>
+                            <option value="online">Online</option>
+                            <option value="distance">Distance</option>
+                            <option value="flexible">Flexible (Any)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Get Free Counselling</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduGuide</span>
+                    </div>
+                    <p>Your trusted partner in finding the perfect college and course. Expert counselling for a brighter future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="#engineering">Engineering</a></li>
+                        <li><a href="#medical">Medical</a></li>
+                        <li><a href="#management">Management</a></li>
+                        <li><a href="#computer">Computer Science</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +91-XXXXXXXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@eduguide.in</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Your City, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EduGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+91XXXXXXXXXX" class="call-float">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" style="display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="courses-script.js"></script>
+</body>
+</html>
